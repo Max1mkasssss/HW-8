@@ -13,3 +13,74 @@ div.text-box > div > p{
 h3 + p:nth-child(odd){ 
     color: green;
 }
+
+
+/* 
+:nth-child(even) — парні дочірні елементи;
+:nth-child(odd) — непарні дочірні елементи;
+:nth-child(3n) — кожен третій елемент серед дочірніх;
+:nth-child(n+2) — обирає всі елементи, починаючи з другого;
+:nth-child(-n+2) — навпаки, обирає перші два;
+:nth-child(3) — обирає третій дочірній елемент;
+:first-child — дозволяє оформити тільки перший дочірній елемент тегу;
+:last-child — дозволяє оформити тільки останній дочірній елемент тегу;
+:only-child — обирає елемент, що є єдиним дочірнім тегом;
+:empty — обирає елементи, які не мають дочірніх тегів; */
+
+
+/* :link — не відвідане посилання;
+:visited — відвідане посилання;
+:hover — будь-який елемент, на який навели курсор миші;
+:focus — інтерактивний елемент, до якого перейшли за допомогою клавіатури або безпосередньо натиснули ЛКМ;
+:disabled — заблоковані поля форм, тобто ті, що знаходяться в неактивному стані;
+:not(селектор) — елементи, які не містять вказаний селектор -- клас, ідентифікатор, назву чи тип поля форми — :not([type="submit"]);
+:checked — виділені (обрані користувачем) елементи форми. */
+
+
+.lessons{ 
+    color: black;
+    font-size: 21px;
+    font-family: sans-serif;
+    list-style: none;
+    justify-content: center;
+}
+.lessons:hover{ 
+    color: black; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: align-items;
+    transition: 0.5s;
+}
+.lessons:focus{ 
+    color: black; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: align-items;
+    transition: 0.5s;
+}
+button{ 
+    height: 35px;
+    width: 100px;
+    margin-left: 40px;
+}
+button:hover{ 
+    color: blue;
+    background-color: lightblue;
+}
+button:focus{
+    color: blue;
+    background-color: lightblue;
+}
+a{ 
+    text-decoration: none;
+}
+a:link{ 
+    color: black;
+}
+a:visited{ 
+    color: blue;
+}
