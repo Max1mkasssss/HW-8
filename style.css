@@ -53,6 +53,7 @@ h3 + p:nth-child(odd){
     justify-content: align-items;
     transition: 0.5s;
 }
+
 .lessons:focus{ 
     color: black; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -83,4 +84,13 @@ a:link{
 }
 a:visited{ 
     color: blue;
+}
+.Monday > .lessons:first-letter, 
+.tuesday > .lessons:first-letter,
+.wednesday > .lessons:first-letter, 
+.thursday > .lessons:first-letter, 
+.friday > .lessons:first-letter{
+    color: red;
+    font-size: 31px;
+    text-transform: uppercase;
 }
