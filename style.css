@@ -63,7 +63,7 @@ h3 + p:nth-child(odd){
     justify-content: align-items;
     transition: 0.5s;
 }
-button{ 
+/* button{ 
     height: 35px;
     width: 100px;
     margin-left: 40px;
@@ -74,8 +74,8 @@ button:hover{
 }
 button:focus{
     color: blue;
-    background-color: lightblue;
-}
+    background-color: lightblue; */
+/* } */
 a{ 
     text-decoration: none;
 }
@@ -85,11 +85,12 @@ a:link{
 a:visited{ 
     color: blue;
 }
-.Monday > .lessons:first-letter, 
+/* .Monday > .lessons:first-letter, 
 .tuesday > .lessons:first-letter,
 .wednesday > .lessons:first-letter, 
 .thursday > .lessons:first-letter, 
-.friday > .lessons:first-letter{
+.friday > .lessons:first-letter */
+.lessons::first-letter{
     color: red;
     font-size: 31px;
     text-transform: uppercase;
